@@ -1,0 +1,119 @@
+.admin.blogs {
+  position: relative;
+}
+.profile.admin #blogs-table {
+  max-height: calc(100vh - 140px);
+  overflow-y: scroll;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #cccccc transparent; /* For Firefox */
+}
+
+.profile.admin #blogs-table::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.profile.admin #blogs-table::-webkit-scrollbar-track {
+  background: transparent; /* Track background color */
+}
+
+.profile.admin #blogs-table::-webkit-scrollbar-thumb {
+  background-color: #cccccc; /* Scrollbar thumb color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.profile.admin #blogs-table .pagination {
+  margin-top: 1rem;
+}
+.profile.admin .navigation-btns {
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.profile.admin .pagination .current-page {
+  background-color: blue;
+  color: white;
+  /* Add any other styles you want for the current page button */
+}
+.admin.blogs .modal.addblog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 99;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.admin.blogs .modal.editblog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 99;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.admin.blogs .modal.editblog.active {
+  display: flex;
+}
+.admin.blogs .modal.addblog.active {
+  display: flex;
+}
+
+.admin.blogs .modal.addblog form,
+.admin.blogs .modal.editblog form {
+  max-width: 1200px;
+  width: 96%;
+  background: var(--white);
+  padding: 1rem;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+.admin.blogs .modal.addblog .close-icon,
+.admin.blogs .modal.modal.editblog .close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9;
+  cursor: pointer;
+}
+.admin.blogs .modal.addblog .input_group,
+.admin.blogs .modal.editblog .input_group {
+  position: relative;
+}
+.admin.blogs .modal.addblog .input_group .error,
+.admin.blogs .modal.editblog .input_group .error {
+  color: var(--pinkRed);
+}
+.admin.blogs .table_wrapper .submit-btn {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+.admin.blogs .delete.modal{
+  position:fixed;
+  height:100%;
+  left:0;
+  right:0;
+  top:0;
+  background:rgba(0, 0, 0, 0.78);
+  z-index:99;
+  color:#fff;
+  display:none;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+.admin.blogs .delete.modal.active{
+  display:flex;
+}
