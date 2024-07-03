@@ -1,0 +1,5 @@
+.modal-wrapper .submit-btn {
+  background: var(--dark-gold);
+  border:2px solid var(--dark-gold);
+  margin:1rem;
+}

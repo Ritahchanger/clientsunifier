@@ -1,0 +1,124 @@
+.navbar.admin {
+  background: var(--purple-black);
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  height: 50px;
+  top: 0;
+  z-index: 9;
+}
+.navbar .container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navbar .container.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.navbar .container.flex .large-headers {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+.navbar .container .profile-section {
+  cursor: pointer;
+}
+.navbar .logo_container.flex {
+  align-items: center;
+  justify-content: center;
+}
+.navbar .container .page-status {
+  color: var(--white);
+  font-weight: 700;
+  margin: 0 1rem;
+  border-bottom: 1px solid var(--white);
+  cursor: pointer;
+}
+.navbar .container .page-status:nth-child(2) {
+  color: var(--dark-gold);
+}
+.navbar .container .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.navbar .container .navigation_nav_ul.flex {
+  display: flex;
+}
+.navbar .container .medium-header {
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: var(--dark-gold);
+}
+.navbar .profile-section.flex {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--white);
+}
+.navbar .profile-section.flex .arrow p {
+  margin-left: 1rem;
+}
+.navbar .profile-section.flex .arrow p i {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.navbar .profile-section.flex .arrow p i:hover {
+  transform: rotate(180deg);
+  margin-top: 2px;
+}
+.navbar .profile-section.flex .arrow {
+  position: relative;
+}
+.navbar .profile-section.flex {
+  position: relative;
+}
+.navbar .profile-section.flex .drop-down {
+  position: absolute;
+  top: 100%;
+  background:var(--white);
+  padding: 1rem;
+  display: none;
+  border-radius:5px;
+  right:1rem;
+
+}
+
+.navbar .profile-section.flex .drop-down .submit-btn {
+  border-radius: 5px;
+}
+
+.navbar .profile-section.flex .drop-down.active {
+  display: block;
+}
+
+.navbar .profile-section.flex .drop-down .medium-btns {
+  margin: 5px 0rem;
+}
+/* mobile-font */
+@media (max-width: 714px) {
+  .navbar .container .page-status {
+    font-size: var(--mobile-font);
+  }
+  .navbar .container .large-headers.name {
+    display: none;
+  }
+  .navbar .profile-section.flex .drop-down {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 378px) {
+  .navbar .navigation_nav_ul.flex .page-status.id {
+    display: none;
+  }
+}

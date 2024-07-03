@@ -1,0 +1,87 @@
+.authentication {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authentication .authentication_form_container {
+  flex-basis: 50%;
+}
+.authentication .authentication_controller_page {
+  flex-basis: 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://images.pexels.com/photos/753695/pexels-photo-753695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  text-align: center;
+  background-position:center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.authentication .authentication_form_container .medium-header {
+  font-size: 2rem;
+}
+.authentication .authentication_controller_page .medium-header {
+  font-size: 2rem;
+}
+.authentication .authentication_controller_page .universal-btn {
+  margin-top: 1rem;
+}
+.authentication .authentication_controller_page .large-headers {
+  color:var(--dark-gold);
+  margin-top:1rem;
+}
+
+.authentication .authentication_controller_page .logo{
+    width:70px;
+}
+
+
+.authentication .authentication_controller_page .container{
+    width:100%;
+}
+.authentication .welcome_wrapper{
+    background:var(--white);
+}
+.authentication .authentication_controller_page .universal-btn{
+  display:inline-block;
+}
+.authentication .input-group {
+  border-bottom: 1px solid var(--gray);
+  margin: 1rem 0rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor: pointer;
+}
+.authentication .input-group input{
+    margin-left:1rem;
+    cursor:pointer;
+}
+.authentication input {
+  border: none;
+}
+
+
+@media(max-width:732px){
+    .authentication{
+        flex-direction:column-reverse;
+        height:100vh;
+    }
+    .authentication .authentication_form_container{
+        width:100%;
+    }
+    .authentication .authentication_controller_page{
+        width:100%;
+    }
+    .authentication .authentication_controller_page .medium-header{
+        font-size:1.2rem;
+    }
+}
+
+@media(max-width:550px){
+  .authentication .authentication_form_container .medium-header {
+    font-size:1.3rem;
+  }
+}
